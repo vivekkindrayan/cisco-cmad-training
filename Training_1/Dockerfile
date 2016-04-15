@@ -3,7 +3,7 @@ FROM vertx/vertx3
 
 #                                                       
 ENV VERTICLE_NAME com.mydomain.myapp.RestAppVerticle
-ENV VERTICLE_FILE target/VertxREST-0.0.1-SNAPSHOT.jar
+ENV VERTICLE_FILE target/1-0.0.1-SNAPSHOT
 
 # Set the location of the verticles
 ENV VERTICLE_HOME /usr/verticles
