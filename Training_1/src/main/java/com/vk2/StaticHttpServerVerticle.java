@@ -39,7 +39,7 @@ public class StaticHttpServerVerticle extends AbstractVerticle {
 				Router restAPI = Router.router(vertx);
 				restAPI.route().handler(StaticHandler.create()::handle);
 				
-				server.requestHandler(restAPI::accept).listen(8090);
+				server.requestHandler(restAPI::accept).listen(8080);
 				
 				System.out.println("StaticHttpServerVerticle deployment complete");
 			}
