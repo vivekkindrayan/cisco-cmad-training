@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>MAD Part 1 Training - Vert.X</title>
+</head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script type="text/javascript">
+function loadJson()
+{
+	console.log("In loadJson");
+	$.get("1.json", function( data ) {
+		$.get( "2.json", function( data ) {
+			$.get( "3.json", function( data ) {
+			});
+		});
+	});
+}
+$(document).ready(function(){
+	//loadJson();
+});
+</script>
+
+<body>
+Welcome to MAD Part 1 Training for Vert.X
+</body>
+</html>
+
